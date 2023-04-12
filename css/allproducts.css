@@ -1,0 +1,114 @@
+.allproducts-main .advertising-img {
+  max-width: 900px;
+  margin: auto;
+  padding: 0 0 60px 0;
+}
+.allproducts-main .advertising-img img {
+  width: 100%;
+}
+.allproducts-main.container-fluid {
+  max-width: 1000px;
+  margin: auto;
+  padding-left: 0;
+  padding-right: 0;
+}
+.dynamic-advertising {
+  max-width: 900px;
+  margin: auto;
+  padding: 0 0 60px 0;
+}
+/* all-products 所有商品項目 */
+.all-products .item .img-fluid {
+  width: 100%;
+  transition: 0.3s;
+}
+.all-products .item:hover .img-fluid {
+  transform: scale(1.1, 1.1);
+}
+
+.all-products a {
+  color: #000;
+  text-decoration: none;
+  padding: 30px 5px 30px;
+}
+.all-products a:hover {
+  color: #000;
+}
+.all-products .item {
+  padding: 30px 5px 30px;
+}
+.all-products .product-name {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 25px 0 10px 0;
+}
+.all-products .product-price {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 0 0 10px 0;
+}
+.all-products .picture {
+  position: relative;
+}
+
+/* 增減 開始---------------------------------------------------------------------- */
+
+.all-products .quantity {
+  padding-bottom: 20px;
+}
+.all-products .decrease {
+  border: 0;
+  border-radius: 5px;
+  padding: 5px 0px;
+}
+
+.all-products .decrease:hover {
+  border: 1px solid #999;
+}
+
+.all-products input.middle {
+  border: 0;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: 5px 0px;
+  text-align: center;
+}
+
+.all-products .increase {
+  border: 0;
+  border-radius: 5px;
+  padding: 5px 0px;
+}
+
+.all-products .increase:hover {
+  border: 1px solid #999;
+}
+
+/* 增減 結束----------------------------------------------------------------------------*/
+
+.all-products .add-shopping-cart {
+  text-align: center;
+  width: 100%;
+  background-color: #6c7a8e;
+  color: #fff;
+  border-radius: 10px;
+  padding: 7px 0;
+  margin: auto;
+  border: 0;
+  font-size: 15px;
+}
+
+.all-products .item:hover img {
+  opacity: 0.7;
+}
+
+.all-products .title {
+  text-align: center;
+  font-size: 35px;
+  padding: 60px;
+  font-weight: bolder;
+}

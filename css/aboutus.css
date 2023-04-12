@@ -1,0 +1,124 @@
+.aboutus-part {
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 40px 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .aboutus-part .card-item {
+    float: 0 0 auto;
+    max-width: 33.33333333333%;
+  }
+}
+@media screen and (min-width: 800px) {
+  .aboutus-part .card-item {
+    float: 0 0 auto;
+    max-width: 50%;
+  }
+}
+.aboutus-part .card-item {
+  float: 0 0 auto;
+  max-width: 100%;
+}
+
+.aboutus-part .card {
+  position: relative;
+  width: 350px;
+  height: 600px;
+  background: linear-gradient(#a4bfd5, #a4bfd5 30%, #708fb4 30%, #708fb4);
+  margin: 10px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.aboutus-part .card .imgBx {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+  z-index: 1000;
+  border-radius: 20px;
+  overflow: hidden;
+  transform-origin: top;
+  /* display: none; */
+}
+.aboutus-part .card:hover .imgBx {
+  transform: translateY(30px) scale(0.5);
+}
+.aboutus-part .card .imgBx .myphoto {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.aboutus-part .card .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 30px;
+  transform: translateY(100%);
+  transition: 0.5s;
+}
+.aboutus-part .card:hover .content {
+  transform: translateY(30px);
+}
+.aboutus-part .card .content .details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.aboutus-part .card .content .details h2 {
+  color: #000;
+  font-size: 20px;
+  font-weight: 500;
+  padding-bottom: 10px;
+}
+.aboutus-part .card .content .details p {
+  padding: 0 10px;
+  text-align: justify;
+}
+.aboutus-part .card .content .details h2 span {
+  font-size: 18px;
+  font-weight: 400;
+  color: #000;
+}
+.aboutus-part .card .content .details .social-icons {
+  position: relative;
+  display: flex;
+  margin-top: 5px;
+  padding: 0;
+}
+.aboutus-part .card .content .details .social-icons li {
+  list-style: none;
+  margin: 4px;
+}
+.aboutus-part .card .content .details .social-icons li a {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #324367;
+  border-radius: 50%;
+  font-size: 1.5em;
+  color: #fff;
+  text-decoration: none;
+  transition: 0.5s;
+}
+.aboutus-part .card .content .details .social-icons li a:hover {
+  transform: translateY(-2px) scale(1.15);
+  background: #3a5068;
+}

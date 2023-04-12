@@ -1,0 +1,117 @@
+.car-bd-main {
+  /* background-color: #cee5f2; */
+  background-color: #fff;
+}
+.car-bd-part {
+  background-color: #cee5f2;
+  border-radius: 10px;
+  width: clamp(350px, 100%, 700px);
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.car-bd-h1 {
+  /* background-color: #b7c6e5; */
+  /* background-color: #ccc; */
+  background-color: #7c98b2;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  width: clamp(350px, 100%, 700px);
+  max-width: 700px;
+  margin: auto;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 5px 20px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.car-bd-form {
+  /* background-color: white; */
+  background-color: #cee5f2;
+  width: clamp(350px, 100%, 700px);
+  max-width: 700px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 0 20px 15px 20px;
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+.car-bd-fieldset {
+  margin: 0 0 20px 0;
+  border: #88a5bf solid 3px;
+  border-radius: 10px;
+  padding: 10px;
+}
+.car-bd-fieldset legend {
+  float: none;
+  width: auto;
+}
+.car-bd-legend {
+  padding: 10px 0;
+  font-size: 25px;
+}
+
+.car-bd-label {
+  font-size: 20px;
+  display: inline-block;
+  width: 100px;
+  text-align: right;
+}
+
+.car-bd-input-text {
+  background-color: #e8f2f9;
+  font-size: 15px;
+  width: clamp(150px, 100%, 350px);
+  max-width: 350px;
+  border: 0;
+  border-radius: 10px;
+  margin: 10px 0;
+  padding: 5px;
+}
+
+.car-bd-input-text:hover {
+  background-color: #b7c6e5;
+  border: #b7c6e5;
+}
+
+.car-bd-option {
+  font-size: 15px;
+  background-color: #e8f2f9;
+}
+
+.car-bd-textarea {
+  background-color: #e8f2f9;
+  font-size: 15px;
+  width: clamp(150px, 100%, 350px);
+  max-width: 350px;
+  border: 0;
+}
+
+.car-bd-textarea:hover {
+  background-color: #b7c6e5;
+  border: #b7c6e5 0;
+}
+
+.car-bd-button-part {
+  display: flex;
+  justify-content: flex-end;
+}
+.car-bd-button {
+  background-color: #b7c6e5;
+  width: 100px;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0px 0 7px 5px;
+  border: #7c98b3 0px;
+  border-radius: 15px;
+  padding: 7px 5px;
+}
+
+.car-bd-button:hover {
+  background-color: #8196bf;
+  color: white;
+}

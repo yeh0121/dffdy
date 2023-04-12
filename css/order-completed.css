@@ -1,0 +1,140 @@
+.container.order-completed-part {
+  max-width: 1000px;
+  padding: 40px 0;
+}
+/* circle-bar 開始---------------------------------------------------------------------------------------------------------- */
+.order-completed-part .circle-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+}
+svg {
+  display: inline-flex;
+  vertical-align: bottom;
+  width: 80px;
+  height: 80px;
+}
+circle {
+  stroke: rgba(255, 255, 255, 0.25);
+  stroke-width: 5px;
+  stroke-dasharray: 0;
+  fill: none;
+}
+.meter {
+  stroke-width: 5px;
+  stroke: #000;
+  fill: none;
+  transition: stroke-dashoffset 2s cubic-bezier(0.43, 0.41, 0.22, 0.91);
+  transform-origin: center center;
+  transform: rotate(-90deg) scaleX(-1);
+}
+text {
+  fill: #000;
+  font-weight: bold;
+  font-size: 40px;
+}
+/* circle-bar 結束---------------------------------------------------------------------------------------------------------- */
+
+.inform-text {
+  text-align: center;
+  padding-bottom: 80px;
+}
+/* 完成訂單資訊 開始---------------------------------------------------------------------------------------------------------- */
+
+.completed-order .title {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 20px 10px;
+  /* margin: 20px 0; */
+  background-color: #7c98b3;
+}
+
+.completed-order .row.titles {
+  font-weight: bold;
+  padding: 10px 0;
+  border-bottom: 1px solid #000;
+  margin: 0 0 20px 0;
+}
+.completed-order .row.titles .total-price-title {
+  text-align: end;
+}
+
+.completed-order .image img {
+  width: 100px;
+}
+.completed-order .row.product {
+  margin-left: 0;
+  margin-right: 0;
+  padding: 20px 0;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.completed-order .product .all-price {
+  text-align: end;
+}
+.completed-order .row.count {
+  margin-left: 0;
+  margin-right: 0;
+  border-top: 1px solid #000;
+  padding: 20px 0;
+  /* align-items: center;
+  justify-content: center; */
+}
+.completed-order .row.count .total-price {
+  text-align: end;
+}
+.completed-order .row.count .next {
+  text-align: end;
+  margin: 60px 0 40px 0;
+  padding: 0 0px 0 0;
+}
+
+.completed-order .row.count .next a {
+  color: #000;
+  border: 0;
+  padding: 10px 20px;
+  align-items: flex-end;
+  text-decoration: none;
+  background-color: #7c98b3;
+  cursor: pointer;
+}
+.completed-order .row.count .next a:hover {
+  color: #fff;
+  background-color: #6d778a;
+  transition: 0.2s;
+}
+@media screen and (max-width: 767px) {
+  .completed-order .row.product {
+    border: 1px solid #ccc;
+  }
+  .completed-order .title {
+    background-color: #7c98b3;
+  }
+  .completed-order .hidden-xs {
+    display: none !important;
+  }
+  .completed-order .product .one-price {
+    text-align: end;
+  }
+  .completed-order .product .all-price {
+    text-align: end;
+  }
+
+  .completed-order .row.count {
+    border-top: 1px solid #ccc;
+  }
+  .completed-order .count .total-price-text {
+    text-align: start;
+  }
+  .completed-order .count .total-price {
+    text-align: end;
+  }
+  .completed-order .row.count .next {
+    margin: 40px 0;
+    padding: 0;
+  }
+}
+
+/* 完成訂單資訊 結束---------------------------------------------------------------------------------------------------------- */

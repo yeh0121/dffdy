@@ -1,0 +1,125 @@
+.controller-main {
+  background-color: #cee5f2;
+}
+
+.controller-part {
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.controller-h1 {
+  background-color: #b7c6e5;
+  width: clamp(350px, 100%, 700px);
+  max-width: 700px;
+  text-align: center;
+  font-size: 40px;
+  margin: auto;
+}
+
+.controller-form {
+  width: clamp(350px, 100%, 700px);
+  max-width: 700px;
+  margin: auto;
+}
+
+.controller-fieldset {
+  background-color: white;
+  margin: 10px 0;
+  border: #5b6e7d solid 3px;
+  border-radius: 10px;
+  padding: 15px 25px 5px 25px;
+}
+
+.controller-legend {
+  font-size: 30px;
+}
+
+.controller-part legend {
+  float: none;
+  width: auto;
+}
+
+.controller-option {
+  font-size: 15px;
+  background-color: #e8f2f9;
+}
+
+.controller-image {
+  width: 220px;
+  height: 200px;
+  display: block;
+  margin: auto;
+  padding: 5px;
+}
+
+
+.controller-label {
+  font-size: 20px;
+  display: inline-block;
+  width: 100px;
+  text-align: right;
+}
+
+.controller-input-text {
+  background-color: #e8f2f9;
+  width: clamp(150px, 100%, 400px);
+  max-width: 400px;
+  font-size: 15px;
+  margin: 10px 1px;
+  border: #e8f2f9;
+  border-radius: 10px;
+  padding: 8px 10px;
+}
+
+.controller-input-text:hover {
+  background-color: #b7c6e5;
+  border: #b7c6e5;
+}
+
+.textarea-pd {
+  background-color: #e8f2f9;
+  font-size: 15px;
+  /* width: 400px; */
+  width: clamp(300px, 100%, 400px);
+  margin: 7px 0;
+  padding: 8px 10px;
+}
+
+.textarea-pd:hover {
+  background-color: #b7c6e5;
+}
+
+.controller-button {
+  background-color: #b7c6e5;
+  width: 100px;
+  font-size: 20px;
+  font-weight: bold;
+  float: right;
+  margin: 3px 0 10px 5px;
+  border: #7c98b3 0px;
+  border-radius: 15px;
+  padding: 5px 3px;
+}
+
+.controller-button:hover {
+  background-color: #8196bf;
+  color: white;
+  border: 2px solid grey;
+}
+
+.controller-bt-serch {
+  background-color: #b7c6e5;
+  width: 60px;
+  font-size: 15px;
+  margin: 3px 0 10px 5px;
+  border: #7c98b3 0px;
+  border-radius: 10px;
+  padding: 6px 3px;
+}
+
+.controller-bt-serch:hover {
+  background-color: #8196bf;
+  color: white;
+  border: 2px solid grey;
+}

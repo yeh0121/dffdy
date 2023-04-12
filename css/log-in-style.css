@@ -1,0 +1,98 @@
+.login-main-style {
+  background-color: #cee5f2;
+}
+
+.member-login {
+  background-image: url(../images/log-in/bg-leaf.png);
+  background-attachment: scroll;
+  width: clamp(350px, 100%, 100%);
+  max-width: 100%;
+  min-height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin: 125px 0 125px 0;
+  border-radius: 10px;
+}
+
+.h1-login {
+  font-size: 40px;
+  font-style: italic;
+  text-align: center;
+  text-shadow: 5px 3px 5px #5b6e7d, 15px 10px 5px #768ba0;
+  margin: 100px;
+}
+
+.form-login {
+  position: absolute;
+  right: 0;
+  width: clamp(350px, 100%, 480px);
+  max-width: 480px;
+  height: 500px;
+  background-color: white;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: left;
+  border-radius: 10px;
+}
+
+.login-fieldset-style {
+  margin: 10px;
+  border: #88a5bf solid 3px;
+  border-radius: 10px;
+  padding: 35px 25px;
+}
+
+.login-fieldset-style .text {
+  padding: 10px;
+}
+
+.login-input-text {
+  font-size: 15px;
+  width: clamp(280px, 100%, 300px);
+  max-width: 300px;
+  background-color: #e8f2f9;
+  padding: 5px 0 5px 0;
+  margin: auto;
+  border-radius: 10px;
+  outline: none;
+  border: 0;
+}
+
+.login-input-text:hover {
+  background-color: #b7c6e5;
+  border: 1px solid #9d9d9d;
+}
+
+.login-button-style {
+  background-color: #88a5bf;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  margin: auto;
+  margin-top: 20px;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  width: 35%;
+  opacity: 0.9;
+}
+
+@media (max-width: 475px) {
+  .login-button-style {
+    width: 100%;
+  }
+}
+
+.login-button-style:hover {
+  background-color: #accbe1;
+  outline: grey solid 2px;
+}
+
+.login-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

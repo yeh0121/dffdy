@@ -1,0 +1,368 @@
+.product-part {
+  padding: 40px 0;
+}
+
+.container.product-part {
+  margin: 60px 0 60px 0;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.product-part .item {
+  margin: 20px 0;
+}
+
+.product-part .product-picture {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.product-part .product-picture img {
+  max-width: 100%;
+}
+
+@media (min-width: 992px) {
+  .product-part .product-picture img {
+    max-width: 80%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .product-part .product-picture img {
+    max-width: 70%;
+  }
+}
+
+.product-part .product-content .name {
+  font-size: 35px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.product-part .product-content .price {
+  font-weight: bold;
+  text-align: center;
+  font-size: 25px;
+}
+
+.product-part .product-content .note {
+  text-align: center;
+  font-size: 18px;
+}
+
+.product-part .product-content .quantity .text {
+  margin: 10px 0;
+}
+
+.product-part .product-content .quantity .left {
+  color: #999;
+}
+
+.product-part .product-content .quantity .right {
+  float: right;
+  color: rgb(214, 68, 68);
+}
+
+.product-part .product-content .quantity {
+  max-width: 400px;
+  margin: auto;
+  margin-top: 60px;
+}
+
+.product-part .product-content .quantity .all {
+  margin: 0;
+}
+
+.product-part .product-content .quantity .decrease {
+  border: 0;
+  border-radius: 5px;
+  padding: 5px 0px;
+}
+
+.product-part .product-content .quantity .decrease:hover {
+  border: 1px solid #999;
+}
+
+.product-part .product-content .quantity input {
+  border: 0;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: 5px 0px;
+  text-align: center;
+}
+
+.product-part .product-content .quantity .increase {
+  border: 0;
+  border-radius: 5px;
+  padding: 5px 0px;
+}
+
+.product-part .product-content .quantity .increase:hover {
+  border: 1px solid #999;
+}
+
+.product-part .product-content .cart-checkout {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 422px;
+  margin: auto;
+}
+
+.product-part .product-content .cart {
+  text-align: center;
+}
+
+.product-part .product-content .cart .add-shopping-cart {
+  width: 150px;
+  padding: 10px 30px;
+  border-radius: 10px;
+  border: 0;
+  background-color: #94b2ca;
+  color: #000;
+  text-align: center;
+  margin-top: 40px;
+  /* max-width: 400px; */
+}
+
+.product-part .product-content .cart .add-shopping-cart:hover {
+  background-color: #6a8397;
+  color: #fff;
+}
+
+.product-part .product-content .checkout {
+  text-align: center;
+}
+
+.product-part .product-content .checkout .checkout-btn {
+  width: 150px;
+  padding: 10px 30px;
+  border-radius: 10px;
+  border: 0;
+  background-color: #94b2ca;
+  color: #000;
+  text-align: center;
+  margin-top: 40px;
+  /* max-width: 400px; */
+}
+
+.product-part .product-content .checkout .checkout-btn:hover {
+  background-color: #6a8397;
+  color: #fff;
+}
+
+/* ----------------------------------------------------------- */
+.product-part .description {
+  margin: auto;
+  /* border: 2px solid #6a8397; */
+}
+
+.product-part .description .title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.product-part .description .title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* tabs 開始*/
+
+.product-part .tabs-part .all {
+  padding: 0;
+}
+
+.product-part .row .tab {
+  margin-top: 100px;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  padding: 0;
+  border: 0;
+  border-bottom: 3px solid #6a8397;
+}
+
+.product-part .tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.poduct-part .tab button:hover {
+  background-color: #eeeeee;
+}
+
+.product-part .tab button.active {
+  background-color: #6a8397;
+  color: #fff;
+}
+
+.product-part .tabcontent {
+  display: none;
+  padding: 6px 12px;
+  /* border: 1px solid #ccc; */
+  /* border: 2px solid #6a8397; */
+  border-top: none;
+}
+
+/* tabs 結束*/
+
+.product-part .review-comment .review {
+  padding: 0 20px 40px 20px;
+}
+.product-part .review-comment .comment {
+  padding: 0 20px 40px 20px;
+}
+.product-part .review-comment .title {
+  margin: 40px 0;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+}
+/* ---------------------------------------評論 開始------------------------------------------- */
+.product-part .review {
+  height: 500px;
+}
+.product-part .review .all-review {
+  height: 400px;
+  overflow: auto;
+}
+
+.product-part .review-item .information {
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+.product-part .review-item .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.product-part .review-item .left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.product-part .review-item .left img {
+  margin-right: 10px;
+  width: 45px;
+}
+.product-part .review-item .left .rating {
+  color: rgb(67, 129, 177);
+}
+
+.product-part .review-item .right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  text-align: right;
+}
+.product-part .review-item .bottom {
+  /* text-align: center; */
+  margin: 20px 0 0 50px;
+}
+/* ---------------------------------------評論 結束------------------------------------------- */
+
+/* ---------------------------------------留言板 開始------------------------------------------- */
+
+.product-part .comment .name {
+  border: 1px solid #353535;
+  padding: 2px 10px;
+  margin: 20px 0px 20px 0px;
+  outline: none;
+}
+.product-part .comment textarea {
+  resize: none;
+
+  height: 150px;
+  border: 1px solid #353535;
+  outline: none;
+}
+
+.product-part .rating-summit-part {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-part .rating-summit-part .submit {
+  padding: 1px 20px;
+  margin: 20px 0;
+  background-color: rgb(67, 129, 177);
+  border: 0;
+  color: #fff;
+}
+.product-part .rating-summit-part .submit:hover {
+  background-color: rgb(60, 103, 137);
+  color: #fff;
+}
+
+/* 星級 */
+.product-part .rating-summit-part .rating {
+  position: relative;
+  transform: rotateY(180deg);
+  display: flex;
+  justify-content: end;
+}
+.product-part .rating-summit-part .rating input {
+  display: none;
+}
+
+.product-part .rating-summit-part .rating label {
+  float: left;
+  color: rgb(165, 186, 206);
+  margin: 20px 0;
+}
+
+.product-part .rating-summit-part .rating label::after {
+  content: "★";
+  font-size: 28px;
+  padding: 5px;
+  display: inline-block;
+  line-height: 1;
+  transition: 0.3s;
+}
+
+.product-part .rating-summit-part .rating input:checked ~ label,
+.product-part .rating-summit-part .rating label:hover ~ label,
+.product-part .rating-summit-part .rating label:hover {
+  color: rgb(67, 129, 177);
+}
+
+/* ---------------------------------------留言板 結束------------------------------------------- */
+
+/* ---------------------------------------推薦商品 開始------------------------------------------- */
+.product-part .recommend .title {
+  margin: 40px 0;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+}
+/* .product-part .recommend .recommend-item {
+  border: 1px solid #000;
+  padding: 0;
+   margin: 0 10px;
+} */
+.product-part .recommend .recommend-item a {
+  text-decoration: none;
+  color: #000;
+}
+.product-part .recommend .product-name {
+  text-align: center;
+  margin: 20px 0 10px 0;
+}
+.product-part .recommend .product-price {
+  text-align: center;
+  margin: 10px 0 60px 0;
+}
+
+/* ---------------------------------------推薦商品 結束------------------------------------------- */

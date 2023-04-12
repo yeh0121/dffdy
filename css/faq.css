@@ -1,0 +1,88 @@
+.faq-main {
+  /* background-color: #eeeeef; */
+  background-color: #cee5f2;
+}
+
+.faqs .all {
+  height: 100%;
+  position: relative;
+  z-index: 2;
+  padding: 0px;
+  padding: 50px 0;
+}
+
+.faqs .title {
+  text-align: center;
+  font-size: 35px;
+  padding-bottom: 60px;
+  font-weight: bolder;
+}
+
+.faqs .content {
+  max-width: 800px;
+}
+
+/* 用於打開和關閉的按鈕*/
+.faqs .accordion {
+  background-color: #a7b5c7;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  border-bottom: 2px solid #fff;
+}
+
+.faqs .active,
+.faqs .accordion:hover {
+  background-color: #6c7f97;
+  color: #fff;
+}
+
+/* 隱藏 panel */
+.faqs .panel {
+  padding: 0 18px;
+  background-color: #fff;
+  display: none;
+  overflow: hidden;
+}
+
+/* 製作動畫折疊項 */
+.faqs .panel {
+  padding: 0 18px;
+  background-color: #d7dfe9;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.faqs .panel p {
+  padding: 18px 0;
+  margin: 0;
+}
+
+.faqs .accordion:after {
+  content: "+";
+  font-size: 15px;
+  color: #000;
+  float: right;
+  margin-left: 5px;
+}
+
+.faqs .active:after {
+  content: "–";
+  font-size: 15px;
+  color: #000;
+  float: right;
+  margin-left: 5px;
+  font-weight: bolder;
+}
+
+.faqs .flower {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+}

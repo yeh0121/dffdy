@@ -1,0 +1,440 @@
+.member-center {
+  padding: 40px 0;
+  max-width: 1000px;
+}
+/* tabs 用bootstraps https://bootstrap5.hexschool.com/docs/5.0/components/navs-tabs/ */
+.member-center .nav-link {
+  color: #000;
+}
+.member-center .nav-link:hover {
+  color: #000;
+  /* font-weight: bold; */
+}
+.member-center .nav-pills .nav-link.active,
+.member-center .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #596478;
+}
+
+/* tabs 結束------------------------------------------------------------------------- */
+
+/* ---------------------------------------購買清單(訂單紀錄) 開始------------------------------------------- */
+.buy-list .all-order {
+  margin-top: 40px;
+  border-right: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+}
+
+.buy-list .title {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 20px 10px;
+  /* margin: 20px 0; */
+  background-color: #7c98b3;
+}
+
+.buy-list .row.titles {
+  font-weight: bold;
+  padding: 10px 0;
+  border-top: 1px solid #ccc;
+  border-bottom: 2px solid #ccc;
+  margin: 0 0 0px 0;
+}
+.buy-list .row.titles .order-status {
+  text-align: end;
+  color: rgb(214, 77, 77);
+}
+
+.buy-list .image img {
+  width: 100px;
+}
+.buy-list .row.product {
+  margin-left: 0;
+  margin-right: 0;
+  padding: 20px 0;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.buy-list .count .total-price-text {
+  text-align: start;
+}
+.buy-list .product .all-price {
+  text-align: end;
+}
+
+.buy-list .row.count {
+  margin-left: 0;
+  margin-right: 0;
+
+  padding: 20px 0;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid #ccc;
+  border-bottom: 2px solid #ccc;
+  text-align: end;
+}
+
+@media screen and (max-width: 768px) {
+  .buy-list .row.product {
+    border: 1px solid #ccc;
+  }
+
+  .buy-list .title {
+    background-color: #7c98b3;
+  }
+  .buy-list .row.titles {
+    border-top: 2px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+  }
+  .buy-list .hidden-xs {
+    display: none !important;
+  }
+  .buy-list .product .one-price {
+    text-align: end;
+  }
+  .buy-list .product .all-price {
+    text-align: end;
+  }
+  .buy-list .count {
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+  }
+  .buy-list .count .total-price-text {
+    text-align: start;
+  }
+  .buy-list .count .total-price {
+    text-align: end;
+  }
+  .buy-list .row.count .next {
+    margin: 40px 0;
+  }
+}
+
+/* ---------------------------------------購買清單(訂單紀錄) 結束------------------------------------------- */
+
+/* ---------------------------------------評論 開始------------------------------------------- */
+.member-center .review {
+  max-width: 700px;
+  margin: auto;
+  margin-top: 60px;
+}
+.member-center .review .title {
+  margin-top: 60px;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.member-center .review-item .information {
+  /* border: 1px solid #ddd; */
+  margin-bottom: 40px;
+  padding: 10px;
+}
+.member-center .review-item .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-bottom: 1px solid #ccc;
+}
+.member-center .review-item .left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.member-center .review-item .left img {
+  margin-right: 10px;
+  width: 45px;
+}
+.member-center .review-item .left .rating {
+  color: rgb(67, 129, 177);
+}
+/* 星級 */
+.member-center .review .rating {
+  position: relative;
+  transform: rotateY(180deg);
+  display: flex;
+  justify-content: end;
+}
+.member-center .review .rating input {
+  display: none;
+}
+
+.member-center .review .rating label {
+  float: left;
+  color: rgb(165, 186, 206);
+  /* margin: 20px 0; */
+}
+
+.member-center .review .rating label::after {
+  content: "★";
+  font-size: 16px;
+  /* padding: 5px; */
+  display: inline-block;
+  line-height: 1;
+  transition: 0.3s;
+}
+
+.member-center .review .rating input:checked ~ label,
+.member-center .review .rating label:hover ~ label,
+.member-center .review .rating label:hover {
+  color: rgb(67, 129, 177);
+}
+/* 星級結束 */
+
+.member-center .bottom .text textarea {
+  resize: none;
+  height: 95px;
+  display: block;
+  width: 100%;
+  border: 1px solid #353535;
+  outline: none;
+}
+
+.member-center .bottom .text {
+  width: 100%;
+}
+.member-center .bottom .text .button-group {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-top: 5px;
+}
+.member-center .bottom .text .button-group input {
+  padding: 5px;
+  margin: 30px 0px 5px 5px;
+  border: 0;
+  width: 45px;
+  border-radius: 5px;
+  background-color: #94b2ca;
+  color: #000;
+}
+.member-center .bottom .text .button-group input:hover {
+  background-color: #6a8397;
+  color: #fff;
+}
+
+.member-center .review-item .right {
+  text-align: right;
+}
+.member-center .review-item .product-name {
+  color: #999;
+}
+.member-center .review-item .bottom {
+  margin: 20px 0 0 0px;
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
+}
+.member-center .review-item .bottom .product-picture img {
+  width: 135px;
+  margin: 0 10px 0 0;
+}
+/* ---------------------------------------評論 結束------------------------------------------- */
+
+/* ---------------------------------------確認訂單 開始------------------------------------------- */
+
+.confirm-order .title {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 20px 10px;
+  /* margin: 20px 0; */
+  background-color: #7c98b3;
+}
+
+.confirm-order .row.titles {
+  font-weight: bold;
+  padding: 10px 0;
+  border-bottom: 1px solid #000;
+  margin: 0 0 20px 0;
+}
+
+.confirm-order .image img {
+  width: 100px;
+}
+.confirm-order .row.product {
+  margin-left: 0;
+  margin-right: 0;
+  padding: 20px 0;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/* ---------------------------------------加減按鈕 開始------------------------------------------- */
+.confirm-order .product .amount ul {
+  padding-left: 0;
+}
+.confirm-order .product .amount ul,
+.confirm-order .product .amount li {
+  list-style: none;
+}
+
+.confirm-order .product .amount a {
+  text-decoration: none;
+}
+
+.confirm-order .product .amount a:hover {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.confirm-order .product .amount a:link {
+  text-decoration: none;
+}
+
+.confirm-order .product .amount img {
+  vertical-align: middle;
+}
+
+.confirm-order .product .amount .btn-numbox {
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.confirm-order .product .amount .btn-numbox li {
+  float: left;
+}
+
+.confirm-order .product .amount .btn-numbox li .number,
+.confirm-order .product .amount .kucun {
+  display: inline-block;
+  font-size: 12px;
+  color: #808080;
+  vertical-align: sub;
+}
+
+.confirm-order .product .amount .btn-numbox .count {
+  overflow: hidden;
+  /* margin: 0 16px 0 -20px; */
+}
+
+.confirm-order .product .amount .btn-numbox .count .num-jian,
+.confirm-order .product .amount .input-num,
+.confirm-order .product .amount .num-jia {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  line-height: 28px;
+  text-align: center;
+  font-size: 18px;
+  color: #999;
+  cursor: pointer;
+  border: 1px solid #e6e6e6;
+}
+
+.confirm-order .product .amount .btn-numbox .count .num-jia {
+  margin-left: 1px;
+}
+
+.confirm-order .product .amount .btn-numbox .count .input-num {
+  padding: 13px 0;
+  width: 38px;
+  height: 26px;
+  color: #333;
+  border-left: 0;
+  border-right: 0;
+}
+
+/* ---------------------------------------加減按鈕 結束------------------------------------------- */
+
+.confirm-order .product .delete {
+  cursor: pointer;
+}
+.confirm-order .product .delProduct {
+  border: 0;
+  background-color: #fff;
+}
+.confirm-order .product .delete:hover {
+  color: #e25b46;
+  font-weight: bolder;
+  font-size: 18px;
+}
+.confirm-order .product .delProduct:hover {
+  color: #e25b46;
+  font-weight: bolder;
+  font-size: 18px;
+}
+.confirm-order .row.count {
+  margin-left: 0;
+  margin-right: 0;
+  border-top: 1px solid #000;
+  padding: 20px 0;
+  align-items: center;
+  justify-content: center;
+}
+.confirm-order .row.count .save a {
+  color: #000;
+  border: 0;
+  padding: 10px 20px;
+  align-items: flex-end;
+  text-decoration: none;
+  background-color: #7c98b3;
+  cursor: pointer;
+}
+.confirm-order .row.count .save a:hover {
+  color: #fff;
+  background-color: #6d778a;
+  transition: 0.2s;
+}
+.confirm-order .row.count .next {
+  text-align: end;
+}
+.confirm-order .row.count .next a {
+  color: #000;
+  border: 0;
+  padding: 10px 20px;
+  align-items: flex-end;
+  text-decoration: none;
+  background-color: #7c98b3;
+  cursor: pointer;
+}
+.confirm-order .row.count .next a:hover {
+  color: #fff;
+  background-color: #6d778a;
+  transition: 0.2s;
+}
+@media screen and (max-width: 768px) {
+  .confirm-order .row.product {
+    border: 1px solid #ccc;
+  }
+  .confirm-order .title {
+    background-color: #7c98b3;
+  }
+  .confirm-order .hidden-xs {
+    display: none !important;
+  }
+  .confirm-order .product .one-price {
+    text-align: end;
+  }
+  .confirm-order .product .all-price {
+    text-align: end;
+  }
+  .confirm-order .product .delete {
+    text-align: end;
+    position: absolute;
+    top: 5px;
+    right: 0;
+    cursor: pointer;
+  }
+  .confirm-order .row.count {
+    border-top: 1px solid #ccc;
+  }
+  .confirm-order .count .total-price-text {
+    text-align: start;
+  }
+  .confirm-order .count .total-price {
+    text-align: end;
+  }
+  .confirm-order .row.count .save {
+    margin: 40px 0;
+    text-align: end;
+  }
+  .confirm-order .row.count .next {
+    margin: 40px 0;
+  }
+}
+
+/* ---------------------------------------確認訂單 結束------------------------------------------- */
